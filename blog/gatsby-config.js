@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `bx7n4xf2mo61`,
-        accessToken: `hSmX-Zk50ka3Uz6UUKQv29HJ7Jk8sS4fVyUGFzmRJzQ`,
+        spaceId: `${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`,
       },
     },
     "gatsby-transformer-remark",
