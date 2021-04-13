@@ -3,9 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
+
 const Outer = styled.header`
   background: ${props => props.theme.header.backgroundColor};
-  marginbottom: 1.45rem;
+  margin-bottom: 1.45rem;
 `
 
 const Inner = styled.div`
@@ -20,11 +21,23 @@ const H1 = styled.h1`
 
 const StyledLink = styled(Link)`
   color: white;
-  textdecoration: none;
+  text-decoration: none;
   &:hover {
     color: purple;
   }
 `
+const StyledMenuLinks = styled(Link)`
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  &:visited {
+    color: white;
+  }
+  &:hover {
+    color: purple;
+  }
+`
+
 
 const Header = ({ siteTitle }) => (
   <Outer>
@@ -32,6 +45,12 @@ const Header = ({ siteTitle }) => (
       <H1>
         <StyledLink to="/">{siteTitle}</StyledLink>
       </H1>
+      <h4>
+        <StyledMenuLinks to="/contact/"> Contact </StyledMenuLinks>
+        <StyledMenuLinks to="/about/"> About </StyledMenuLinks>
+        <StyledMenuLinks to="/using-typescript/"> Design </StyledMenuLinks>
+        <StyledMenuLinks to="/page-2/"> Photos </StyledMenuLinks>
+      </h4>
     </Inner>
   </Outer>
 )

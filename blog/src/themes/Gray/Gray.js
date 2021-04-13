@@ -1,5 +1,5 @@
 const theme = {
-  header: { backgroundColor: "#555" },
+  header: { backgroundColor: "#000" },
 }
 
 export { theme as Gray }

@@ -1,12 +1,24 @@
+* {
+  color: white;
+}
+
+footer {
+  background: grey;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  
 }
+
 body {
-  margin: 0;
+  margin: 0px;
+  background: radial-gradient(at top left, rgba(146, 43, 225, 1) 0%, rgba(43, 9, 107, 0.377) 100%);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -19,6 +31,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
 article,
 aside,
 details,
@@ -51,6 +64,7 @@ template {
   display: none;
 }
 a {
+  font-weight: bold;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -72,7 +86,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin-left: 0;
+  margin-left: 0px;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -297,7 +311,7 @@ h4 {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
-  text-rendering: optimizeLegibility;
+  text-align: right;
   font-size: 1rem;
   line-height: 1.1;
 }

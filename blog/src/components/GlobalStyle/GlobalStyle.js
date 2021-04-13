@@ -1,7 +1,33 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  color: black;
+ 
+ 
+  background-color: #efefef;
+  text-align: center;            
+}
+ 
+
+
 html {
+    height: 100%;
+    
+
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     font: 112.5%/1.45em georgia, serif, sans-serif;
@@ -9,7 +35,14 @@ html {
     overflow-y: scroll;
   }
   body {
+    
+    position: relative;
     margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+
+    margin: 0;
+    background:  white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: hsla(0, 0%, 0%, 0.8);
@@ -56,10 +89,13 @@ html {
   a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    
   }
-  a:active,
-  a:hover {
+  
+a:active,
+a:hover {
     outline-width: 0;
+   
   }
   abbr[title] {
     border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -91,6 +127,7 @@ html {
     font-size: 2.25rem;
     line-height: 1.1;
   }
+  
   mark {
     background-color: #ff0;
     color: #000;
@@ -116,7 +153,7 @@ html {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 1rem;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
@@ -300,9 +337,10 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
-    text-rendering: optimizeLegibility;
+    text-align: right;
     font-size: 1rem;
     line-height: 1.1;
+    
   }
   h5 {
     margin-left: 0;
@@ -349,9 +387,9 @@ html {
     margin-bottom: 1.45rem;
   }
   ul {
-    margin-left: 1.45rem;
+    margin-left: 2.45rem;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 3em;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
@@ -493,6 +531,7 @@ html {
   }
   li {
     margin-bottom: calc(1.45rem / 2);
+    margin: 2rem;
   }
   ol li {
     padding-left: 0;

@@ -5,7 +5,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Cool Blog",
+    title: "SquareSpace",
     description: "ITDEV-164 Gatsby Blog.",
     author: "Jouliet Morales",
     contact: {
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId: `${process.env.SPACE_ID}`,
-        accessToken: `${process.env.ACCESS_TOKEN}`,
+        spaceId: `bx7n4xf2mo61`,
+        accessToken: `hSmX-Zk50ka3Uz6UUKQv29HJ7Jk8sS4fVyUGFzmRJzQ`,
       },
     },
     "gatsby-plugin-styled-components",

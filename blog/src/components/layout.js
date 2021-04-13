@@ -13,6 +13,8 @@ import { Gray } from '../themes/Gray'
 import Header from "./header"
 import GlobalStyle from "./GlobalStyle"
 
+
+
 const Content = styled.div`
   margin: 0 auto;
   max-width: 960px;
@@ -32,18 +34,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-      <ThemeProvider theme={Gray}>
-        <GlobalStyle />
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Content>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.com">Gatsby</a>
-          </footer>
-        </Content>
-      </ThemeProvider>
+    <ThemeProvider theme={Gray}>
+      <GlobalStyle />
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <Content>
+        <main>{children}</main>
+      </Content>
+      <footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby</a>, by Jouliet Morales
+      </footer>
+    </ThemeProvider>
   )
 }
 
